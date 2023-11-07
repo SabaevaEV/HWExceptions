@@ -21,7 +21,7 @@ public class ControlData {
             throw new IllegalArgumentException("Введены неверные числа даты рождения");
         }
 
-        if ( !String.valueOf(phoneNumber).equals("[0-9]+") )
+        if ( !String.valueOf(phoneNumber).matches("[0-9]+") )
         {
             throw new IllegalArgumentException("Введены неверные данные - Телефон");
         }
