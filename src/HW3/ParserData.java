@@ -16,6 +16,7 @@ public class ParserData {
         String birthDate = data[3];
         long phoneNumber = Long.parseLong(data[4]);
         char gender = data[5].charAt(0);
+
         controlException (lastName, firstName, patronymic, birthDate, phoneNumber,gender);
         recorderData (lastName, firstName, patronymic, birthDate, phoneNumber,gender);
         System.out.println("Данные успешно записаны");
