@@ -1,6 +1,5 @@
 package HW3;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class InputData {
