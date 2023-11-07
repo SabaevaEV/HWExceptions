@@ -2,6 +2,7 @@ package HW3;
 
 import java.io.IOException;
 
+import static HW3.ControlData.controlException;
 import static HW3.RecorderData.recorderData;
 
 public class ParserData {
@@ -15,17 +16,9 @@ public class ParserData {
         String birthDate = data[3];
         long phoneNumber = Long.parseLong(data[4]);
         char gender = data[5].charAt(0);
-        controlEx (lastName, firstName, patronymic, birthDate, phoneNumber,gender);
+        controlException (lastName, firstName, patronymic, birthDate, phoneNumber,gender);
         recorderData (lastName, firstName, patronymic, birthDate, phoneNumber,gender);
+        System.out.println("Данные успешно записаны");
     }
-
-
-
-
-
-//        //Record
-//        recUserData(SurName, FirstName, Patronymic, birthDate, phoneNumber, gender);
-//
-//        System.out.println("User Data Successfully Saved");
 
 }
