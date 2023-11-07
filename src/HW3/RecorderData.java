@@ -9,8 +9,8 @@ public class RecorderData {
         String newFile = lastName + ".txt";
         try (FileWriter writer = new FileWriter (newFile, true))
         {
-            writer.write("Фамилия: " + lastName + ", Имя: " + firstName + ", Отчество: " + patronymic +
-                    ",  Дата рождения: " + birthDate + ", Номер телефона: " + phoneNumber + ", Под: " + gender + ";" + "\n");
+            writer.write("Фамилия: " + lastName + " Имя: " + firstName + " Отчество: " + patronymic +
+                    ",  Дата рождения: " + birthDate + ", Номер телефона: " + phoneNumber + ", Пол: " + gender + ";" + "\n");
         }
     }
 }

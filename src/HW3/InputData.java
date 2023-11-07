@@ -9,7 +9,7 @@ public class InputData {
 
         try {
             System.out.println("Введите следующие данные через пробел: \n "
-                    + "Фамилия Имя Отчество, дату рождения в формате - dd.mm.yyyy, номер телефона - цифры, пол - f/m ): ");
+                    + "Фамилия Имя Отчество, дату рождения в формате - dd.mm.yyyy, номер телефона - цифры, пол - f/m ): \n");
             String inputData = scanner.nextLine();
             String[] arrayData = inputData.split(" ");
             if (arrayData.length != 6){
@@ -17,8 +17,9 @@ public class InputData {
             }
             return arrayData;
         } catch (IllegalArgumentException e){
-            System.out.println("Ошибка" + e.getMessage());
-        } finally
+            System.out.println("Ошибка " + e.getMessage());
+        }
+        finally
         {
             scanner.close();
         }

@@ -9,7 +9,7 @@ public class ControlData {
         }
         if(!birthDate.matches("\\d{2}.\\d{2}.\\d{4}"))
         {
-            throw new IllegalArgumentException("Информация неправильного формата");
+            throw new IllegalArgumentException("Некорректно введена Дата");
         }
 
         String[] dataParts = birthDate.split("\\.");
