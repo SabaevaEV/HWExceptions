@@ -2,18 +2,16 @@ package HW3;
 
 import java.io.IOException;
 
-public class Parser {
+public class ParserData {
     public String[] parsingData() throws IOException {
         InputData inputdata = new InputData();
         String [] data = inputdata.inputData();
 
-        String SurName = data[0];
-        String FirstName = data[1];
-        String Patronymic = data[2];
+        String lastName = data[0];
+        String firstName = data[1];
+        String patronymic = data[2];
         String birthDate = data[3];
-        // String phoneNumber = data[4];
         long phoneNumber = Long.parseLong(data[4]);
-        // String gender = data[5];
         char gender = data[5].charAt(0);
 //        //Check validate data
 //        validateUserData(SurName, FirstName, Patronymic, birthDate, phoneNumber, gender);
