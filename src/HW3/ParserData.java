@@ -20,9 +20,8 @@ public class ParserData {
 
 
 
-//        //Check validate userData
-//        validateUserData(SurName, FirstName, Patronymic, birthDate, phoneNumber, gender);
-//        //Record userData
+
+//        //Record
 //        recUserData(SurName, FirstName, Patronymic, birthDate, phoneNumber, gender);
 //
 //        System.out.println("User Data Successfully Saved");
