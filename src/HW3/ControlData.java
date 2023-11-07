@@ -21,16 +21,14 @@ public class ControlData {
             throw new IllegalArgumentException("Введены неверные числа даты рождения");
         }
 
-        // Validate phoneNumber (long)
-        if (phoneNumber < 70000000000L || phoneNumber > 79999999999L)
+        if ( !String.valueOf(phoneNumber).equals("[0-9]+") )
         {
-            throw new IllegalArgumentException("Incorrect Phone Number. The phone number should be within the range of +70000000000 to +79999999999.");
+            throw new IllegalArgumentException("Введены неверные данные - Телефон");
         }
 
-        // Validate gender (Char)
         if(!String.valueOf(gender).equalsIgnoreCase("f") && !String.valueOf(gender).equalsIgnoreCase("m"))
         {
-            throw new IllegalArgumentException("Incorrect gender");
+            throw new IllegalArgumentException("Введены неверные данные - Пол");
         }
     }
 
