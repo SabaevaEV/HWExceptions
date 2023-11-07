@@ -2,8 +2,10 @@ package HW3;
 
 import java.io.IOException;
 
+import static HW3.RecorderData.recorderData;
+
 public class ParserData {
-    public String[] parsingData() throws IOException {
+    public void parsingData() throws IOException {
         InputData inputdata = new InputData();
         String [] data = inputdata.inputData();
 
@@ -13,8 +15,8 @@ public class ParserData {
         String birthDate = data[3];
         long phoneNumber = Long.parseLong(data[4]);
         char gender = data[5].charAt(0);
-
-        validateUserData(lastName, firstName, patronymic, birthDate, phoneNumber, gender);
+        controlEx (lastName, firstName, patronymic, birthDate, phoneNumber,gender);
+        recorderData (lastName, firstName, patronymic, birthDate, phoneNumber,gender);
     }
 
 

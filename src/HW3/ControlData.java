@@ -1,7 +1,7 @@
 package HW3;
 
 public class ControlData {
-    private static void ControlException (String lastName, String firstName, String patronymic, String birthDate, long phoneNumber, char gender){
+    public static void controlException (String lastName, String firstName, String patronymic, String birthDate, long phoneNumber, char gender){
 
         if(!lastName.matches("[a-zA-Z]+") || !firstName.matches("[a-zA-Z]+") || !patronymic.matches("[a-zA-Z]+"))
         {
