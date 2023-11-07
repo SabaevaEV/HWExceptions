@@ -1,7 +1,11 @@
 package HW3;
-import java.util.Scanner;
-public class Main {
- ParserData data = new ParserData();
 
+import java.io.IOException;
+
+public class Main {
+ public static void main(String[] args) throws IOException {
+  ParserData data = new ParserData();
+  data.parsingData();
+ }
 
 }
